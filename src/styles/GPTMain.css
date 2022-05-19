@@ -1,0 +1,14 @@
+#inputWrap {
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+}
+
+#generateButtonWrap {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.MuiTable-root.student-list {
+    margin-top: 5%;
+  }
