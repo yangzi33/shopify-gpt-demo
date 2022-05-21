@@ -12,3 +12,9 @@
 .MuiTable-root.student-list {
     margin-top: 5%;
   }
+
+#resultWrap {
+    width: 60%;
+    margin: auto;
+    margin-top: 5px;
+}

@@ -21,15 +21,17 @@ function App() {
     //   </header>
     // </div>
     <div>
-      <Typography
-        component="h1"
-        variant="h2"
-        align="center"
-        color="textPrimary"
-        gutterBottom
-      >
-        Fun with GPT-3
-      </Typography>
+      <div id="headerContainer">
+        <Typography
+          component="h1"
+          variant="h2"
+          align="center"
+          color="textPrimary"
+          gutterBottom
+        >
+          Fun with GPT-3
+        </Typography>
+      </div>
       <GPTMain />
     </div>
   );

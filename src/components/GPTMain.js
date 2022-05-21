@@ -12,19 +12,25 @@ class GPTMain extends React.Component {
   state = {
     promptInput: "",
     prompts: [
-      { promptInput: "dummy prompt 1", result: "dummy result 1" },
-      { promptInput: "dummy prompt 2", result: "dummy result 2" },
+    //   { promptInput: "dummy prompt 1", result: "dummy result 1" },
+    //   { promptInput: "dummy prompt 2", result: "dummy result 2" },
+    //   {
+    //     promptInput:
+    //       "dsadaaaa aaa a a a aaaaa aaaaaaaa s ss sss ss ssss sssssssss ssssssssssssssssssssssss sssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaadummy prompt 2",
+    //     result:
+    //       "dumdsssssss sssss sssss ssssss sss ssss sssss sss ssssss sssssssssssssmy result 2",
+    //   },
     ],
   };
 
-  //   handleChange = (e) => {
-  //     const value = e.target.value;
-  //     const name = e.target.name;
+  handleChange = (e) => {
+    const value = e.target.value;
+    const name = e.target.name;
 
-  //     this.setState({
-  //       [name]: value,
-  //     });
-  //   };
+    this.setState({
+      [name]: value,
+    });
+  };
 
   render() {
     const { prompt } = this.props;
@@ -34,9 +40,10 @@ class GPTMain extends React.Component {
         <div id="inputWrap">
           <TextField
             id="propmt-input"
-            label="Outlined"
+            name="promptInput"
+            label="Ask me anything!"
             variant="outlined"
-            placeholder="MultiLine with rows: 2 and rowsMax: 4"
+            placeholder="but be friendly..."
             value={prompt}
             onChange={this.handleChange}
             multiline
